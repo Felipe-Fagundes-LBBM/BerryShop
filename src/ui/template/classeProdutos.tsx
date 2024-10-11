@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Box, Typography, Card, CardContent} from "@mui/material";
 import Cards from "../components/cards";
 
-export default function Produtos(){
+
+export default function classeProdutos(){
     return(
         <Box sx={{ minHeight:600, padding: 10, backgroundColor:"#fe0d38"}}>
             {/* <Typography variant="h2" fontSize={40} fontWeight={550} color="#ffffff" textAlign="center">Produtos disponíveis</Typography> */}

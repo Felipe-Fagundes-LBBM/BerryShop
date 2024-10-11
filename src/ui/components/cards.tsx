@@ -12,12 +12,13 @@ type Prop = {
 export default function Cards({text, width, height, path}:Prop){
     const card = (
         <React.Fragment>
-            <CardContent sx={{textAlign: "center"}}>
+            <CardContent sx={{textAlign: "center", maxWidth: '100%', height: 'auto'}}>
                 <Image
                     src={path}
                     width={width}
                     height={height}
                     alt="123"
+                    // layout="responsive"
                 ></Image>
                <Typography variant="body1" fontSize={20}>{text}</Typography> 
             </CardContent>
@@ -25,7 +26,7 @@ export default function Cards({text, width, height, path}:Prop){
     )
 
     return(
-        <Box sx={{}}>
+        <Box sx={{margin:5}}>
             <Card>{card}</Card>
         </Box>
         
