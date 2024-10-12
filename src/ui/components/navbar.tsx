@@ -1,11 +1,29 @@
+"use client"
 import { Box, List, ListItem, Typography, IconButton, Menu, MenuItem, Avatar } from "@mui/material";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar(){
     return(
-        <Box sx={{ margin:0, padding:0, minHeight: 80, alignContent:"center"}}>
+        <Box sx={{ margin:0, padding:0, minHeight: 80, width:"100%", textAlign:"center", alignContent:"center" /*position:"fixed"*/}}>
+            
             <List sx={{ display: "flex", listStyle:"none"}}>
+                <ListItem>
+                    <Link href="/" style={{ textDecoration: "none", color: "#5c0413", backgroundColor:"#e9a3af", padding:10}}>                  
+                        <Typography variant="h1" fontSize={30}>
+                        <Image
+                            src="/imagem_semfundo.png"
+                            width={35}
+                            height={35}
+                            alt=""
+                            style={{ verticalAlign: "text-bottom" }}
+                            >
+                            </Image>
+                            BerryShop
+                            </Typography>
+                    </Link>
+                </ListItem>
                 <ListItem>
                     <Link href="/"><Typography variant="body1" fontSize={20}>Início</Typography></Link>
                 </ListItem>
