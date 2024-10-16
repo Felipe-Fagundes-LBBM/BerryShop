@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 export default function Catalogo(){
     return(
-        <Box sx={{}}>
+        <Box sx={{paddingTop:15 }}>
             <Produto></Produto>
         </Box>
     );
